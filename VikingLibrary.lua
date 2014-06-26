@@ -39,7 +39,7 @@ local VikingLibrary = {
   ]]
 }
 
-local tColors = {
+VikingLibrary.tColors = {
   black       = "201e2d",
   white       = "ffffff",
   grey        = "",
@@ -65,8 +65,6 @@ function VikingLibrary:new(o)
     setmetatable(o, self)
     self.__index = self
 
-    -- initialize variables here
-    o.tColors = tColors
 
     return o
 end
@@ -89,7 +87,7 @@ function VikingLibrary:OnLoad()
   self.xmlDoc = XmlDoc.CreateFromFile("VikingLibrary.xml")
   self.xmlDoc:RegisterCallback("OnDocLoaded", self)
 
-  Apollo.LoadSprites("VikingLibrarySprites.xml")
+  Apollo.LoadSprites("VikingSprites.xml")
 end
 
 -----------------------------------------------------------------------------------------------
@@ -98,8 +96,14 @@ end
 
 -- Assumes that alpha is a value of 0-100
 function VikingLibrary:NewColor(color, alpha)
+  self.color(color, alpha)
+  return ApolloColor.new(sAlpha .. self.tColors[color])
+end
+
+function VikingLibrary.color(color, alpha)
+  alpha = alpha == nil and 100
   local sAlpha = string.format("%x", (alpha / 100) * 255)
-  return ApolloColor.new(sAlpha .. tColors[color])
+  return sAlpha .. VikingLibrary.tColors[color]
 end
 
 -----------------------------------------------------------------------------------------------
