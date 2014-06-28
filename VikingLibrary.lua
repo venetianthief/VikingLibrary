@@ -39,6 +39,17 @@ local VikingLibrary = {
   ]]
 }
 
+local tModules = {
+  Colours = {
+    red = "ff0000",
+    green = "00ff00",
+    blue = "0000ff"
+  },
+  Number = 32,
+  Who = "noone",
+  Why = "no reason"
+}
+
 VikingLibrary.tColors = {
   black       = "201e2d",
   white       = "ffffff",
@@ -120,6 +131,7 @@ function VikingLibrary:OnDocLoaded()
 
       self.wndMain:Show(true, true)
 
+      Event_FireGenericEvent("VikingLibrary:Loaded")
     -- if the xmlDoc is no longer needed, you should set it to nil
     -- self.xmlDoc = nil
 
@@ -129,6 +141,17 @@ function VikingLibrary:OnDocLoaded()
     -- Do additional Addon initialization here
   end
 end
+
+function VikingLibrary.Include(modules)
+
+  local m = {}
+  for k,v in ipairs(modules) do
+    table.insert(m, tModules[v])
+  end
+  return unpack(m)
+
+end
+
 
 -----------------------------------------------------------------------------------------------
 -- VikingLibrary Instance
