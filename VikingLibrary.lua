@@ -39,6 +39,8 @@ local VikingLibrary = {
   ]]
 }
 
+local VikingSettings
+
 local tModules = {
   Colours = {
     red = "ff0000",
@@ -48,20 +50,6 @@ local tModules = {
   Number = 32,
   Who = "noone",
   Why = "no reason"
-}
-
-VikingLibrary.tColors = {
-  black       = "201e2d",
-  white       = "ffffff",
-  grey        = "",
-  lightGrey   = "bcb7da",
-  red         = "e05757",
-  green       = "06ff5e",
-  blue        = "49e8ee",
-  lightPurple = "645f7e",
-  purple      = "28253a",
-  yellow      = "ffd161",
-  orange      = ""
 }
 
 -----------------------------------------------------------------------------------------------
@@ -84,7 +72,7 @@ end
 function VikingLibrary:Init()
   local bHasConfigureFunction = false
   local strConfigureButtonText = ""
-  local tDependencies = { }
+  local tDependencies = { "VikingSettings" }
 
   Apollo.RegisterAddon(self, bHasConfigureFunction, strConfigureButtonText, tDependencies)
 end
@@ -132,6 +120,10 @@ function VikingLibrary:OnDocLoaded()
       self.wndMain:Show(true, true)
 
       Event_FireGenericEvent("VikingLibrary:Loaded")
+
+      VikingSettings = Apollo.GetAddon("VikingSettings")
+
+      self.tColors = VikingSettings.tColors
     -- if the xmlDoc is no longer needed, you should set it to nil
     -- self.xmlDoc = nil
 
@@ -140,6 +132,16 @@ function VikingLibrary:OnDocLoaded()
 
     -- Do additional Addon initialization here
   end
+end
+
+function VikingLibrary.RegisterSettings(parent, xmlDoc)
+  return VikingSettings.RegisterSettings(parent, xmlDoc)
+end
+
+function VikingLibrary.GetDatabase(dbName)
+  local db = VikingSettings.db.char[dbName]
+  db.General = VikingSettings.db.char.General
+  return db
 end
 
 function VikingLibrary.Include(modules)
