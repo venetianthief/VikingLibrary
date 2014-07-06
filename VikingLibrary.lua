@@ -87,6 +87,7 @@ function VikingLibrary:OnLoad()
   self.xmlDoc:RegisterCallback("OnDocLoaded", self)
 
   Apollo.LoadSprites("VikingSprites.xml")
+
 end
 
 -----------------------------------------------------------------------------------------------
@@ -111,19 +112,19 @@ end
 function VikingLibrary:OnDocLoaded()
 
   if self.xmlDoc ~= nil and self.xmlDoc:IsLoaded() then
-      self.wndMain = Apollo.LoadForm(self.xmlDoc, "Form", nil, self)
+    self.wndMain = Apollo.LoadForm(self.xmlDoc, "Form", nil, self)
     if self.wndMain == nil then
       Apollo.AddAddonErrorText(self, "Could not load the main window for some reason.")
       return
     end
 
-      self.wndMain:Show(true, true)
+    self.wndMain:Show(true, true)
 
-      Event_FireGenericEvent("VikingLibrary:Loaded")
+    Event_FireGenericEvent("VikingLibrary:Loaded")
 
-      VikingSettings = Apollo.GetAddon("VikingSettings")
+    VikingSettings = Apollo.GetAddon("VikingSettings")
 
-      self.tColors = VikingSettings.tColors
+    self.tColors = VikingSettings.tColors
     -- if the xmlDoc is no longer needed, you should set it to nil
     -- self.xmlDoc = nil
 
@@ -139,6 +140,7 @@ function VikingLibrary.RegisterSettings(parent, xmlDoc)
 end
 
 function VikingLibrary.GetDatabase(dbName)
+  VikingSettings = Apollo.GetAddon("VikingSettings")
   local db = VikingSettings.db.char[dbName]
   db.General = VikingSettings.db.char.General
   return db
