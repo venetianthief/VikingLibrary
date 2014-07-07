@@ -135,8 +135,8 @@ function VikingLibrary:OnDocLoaded()
   end
 end
 
-function VikingLibrary.RegisterSettings(parent, xmlDoc)
-  return VikingSettings.RegisterSettings(parent, xmlDoc)
+function VikingLibrary.RegisterSettings(parent, sAddonName)
+  return VikingSettings.RegisterSettings(parent, sAddonName)
 end
 
 function VikingLibrary.GetDatabase(dbName)
