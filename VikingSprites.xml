@@ -16,7 +16,7 @@
         <Frame Texture="VikingLibrary\assets\gradient128.tga" x0="0" x1="256" x2="256" x3="256" x4="256" x5="256" y0="0" y1="128" y2="128" y3="128" y4="128" y5="128" Stretchy="1" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
     <Sprite Name="SprintBackground" Cycle="1">
-        <Frame Texture="VikingLibrary\assets\sprintBackground.tga" x0="0" x1="4" x2="5" x3="5" x4="6" x5="10" y0="0" y1="0" y2="0" y3="0" y4="0" y5="8" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+        <Frame Texture="VikingLibrary\assets\sprintBackground.tga" x0="0" x1="4" x2="5" x3="5" x4="6" x5="12" y0="0" y1="0" y2="0" y3="0" y4="0" y5="8" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
     <Sprite Name="Chat" Cycle="1">
         <Frame Texture="VikingLibrary\assets\icons.tga" x0="16" x1="16" x2="16" x3="16" x4="16" x5="32" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" Stretchy="1" HotspotX="65" HotspotY="65" Duration="1.000" StartColor="ffffffff" EndColor="ffffffff"/>
