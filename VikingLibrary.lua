@@ -36,33 +36,12 @@ local VikingLibrary = {
     CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
     TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
     SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-  ]]
+  ]],
+
+  Settings = nil
 }
 
-local tModules = {
-  Colours = {
-    red = "ff0000",
-    green = "00ff00",
-    blue = "0000ff"
-  },
-  Number = 32,
-  Who = "noone",
-  Why = "no reason"
-}
-
-VikingLibrary.tColors = {
-  black       = "201e2d",
-  white       = "ffffff",
-  grey        = "",
-  lightGrey   = "bcb7da",
-  red         = "e05757",
-  green       = "06ff5e",
-  blue        = "49e8ee",
-  lightPurple = "645f7e",
-  purple      = "28253a",
-  yellow      = "ffd161",
-  orange      = ""
-}
+local tModules = {}
 
 -----------------------------------------------------------------------------------------------
 -- Constants
@@ -84,7 +63,7 @@ end
 function VikingLibrary:Init()
   local bHasConfigureFunction = false
   local strConfigureButtonText = ""
-  local tDependencies = { }
+  local tDependencies = { "VikingSettings" }
 
   Apollo.RegisterAddon(self, bHasConfigureFunction, strConfigureButtonText, tDependencies)
 end
@@ -99,6 +78,7 @@ function VikingLibrary:OnLoad()
   self.xmlDoc:RegisterCallback("OnDocLoaded", self)
 
   Apollo.LoadSprites("VikingSprites.xml")
+
 end
 
 -----------------------------------------------------------------------------------------------
@@ -117,28 +97,35 @@ function VikingLibrary.color(color, alpha)
   return sAlpha .. VikingLibrary.tColors[color]
 end
 
+-- GetKeyFromValue(t, value)
+--
+-- Finds a key in table 't' which has the value 'v'
+function VikingLibrary.GetKeyFromValue(t, value)
+  for k,v in pairs(t) do
+    if v==value then return k end
+  end
+  return nil
+end
+
 -----------------------------------------------------------------------------------------------
 -- VikingLibrary OnDocLoaded
 -----------------------------------------------------------------------------------------------
 function VikingLibrary:OnDocLoaded()
 
   if self.xmlDoc ~= nil and self.xmlDoc:IsLoaded() then
-      self.wndMain = Apollo.LoadForm(self.xmlDoc, "Form", nil, self)
+    self.wndMain = Apollo.LoadForm(self.xmlDoc, "Form", nil, self)
     if self.wndMain == nil then
       Apollo.AddAddonErrorText(self, "Could not load the main window for some reason.")
       return
     end
 
-      self.wndMain:Show(true, true)
+    self.wndMain:Show(true, true)
 
-      Event_FireGenericEvent("VikingLibrary:Loaded")
-    -- if the xmlDoc is no longer needed, you should set it to nil
-    -- self.xmlDoc = nil
+    Event_FireGenericEvent("VikingLibrary:Loaded")
 
-    -- Register handlers for events, slash commands and timer, etc.
-    -- e.g. Apollo.RegisterEventHandler("KeyDown", "OnKeyDown", self)
+    self.Settings = Apollo.GetAddon("VikingSettings")
 
-    -- Do additional Addon initialization here
+    self.tColors = self.Settings.tColors
   end
 end
 
