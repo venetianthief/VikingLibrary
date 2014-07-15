@@ -41,9 +41,7 @@ local VikingLibrary = {
   Settings = nil
 }
 
-local tModules = {
-
-}
+local tModules = {}
 
 -----------------------------------------------------------------------------------------------
 -- Constants
