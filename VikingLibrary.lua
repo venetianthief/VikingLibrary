@@ -42,14 +42,7 @@ local VikingLibrary = {
 }
 
 local tModules = {
-  Colours = {
-    red = "ff0000",
-    green = "00ff00",
-    blue = "0000ff"
-  },
-  Number = 32,
-  Who = "noone",
-  Why = "no reason"
+
 }
 
 -----------------------------------------------------------------------------------------------
@@ -114,7 +107,7 @@ function VikingLibrary.GetKeyFromValue(t, value)
     if v==value then return k end
   end
   return nil
-end 
+end
 
 -----------------------------------------------------------------------------------------------
 -- VikingLibrary OnDocLoaded
