@@ -55,8 +55,8 @@
         <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="13" y0="13" y1="13" y2="13" y3="13" y4="13" y5="26" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
 
-    <Sprite Name="ArrowSettings" Cycle="1">
-        <Frame Texture="VikingLibrary\assets\arrow.png" x0="0" x1="10" x2="10" x3="10" x4="10" x5="10" y0="0" y1="19" y2="19" y3="19" y4="19" y5="19" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    <Sprite Name="ArrowRight" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\arrowRight.tga" x0="0" x1="16" x2="16" x3="16" x4="16" x5="16" y0="0" y1="32" y2="32" y3="32" y4="32" y5="32" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
 
     <AutoButton Name="ArrowUp" Texture="VikingLibrary\assets\menuArrows.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="32" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" Stretchy="1" StateBits="23" Direction="Down"/>
