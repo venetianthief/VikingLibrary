@@ -36,21 +36,12 @@ local VikingLibrary = {
     CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
     TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
     SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-  ]]
+  ]],
+
+  Settings = nil
 }
 
-local VikingSettings
-
-local tModules = {
-  Colours = {
-    red = "ff0000",
-    green = "00ff00",
-    blue = "0000ff"
-  },
-  Number = 32,
-  Who = "noone",
-  Why = "no reason"
-}
+local tModules = {}
 
 -----------------------------------------------------------------------------------------------
 -- Constants
@@ -106,6 +97,16 @@ function VikingLibrary.color(color, alpha)
   return sAlpha .. VikingLibrary.tColors[color]
 end
 
+-- GetKeyFromValue(t, value)
+--
+-- Finds a key in table 't' which has the value 'v'
+function VikingLibrary.GetKeyFromValue(t, value)
+  for k,v in pairs(t) do
+    if v==value then return k end
+  end
+  return nil
+end
+
 -----------------------------------------------------------------------------------------------
 -- VikingLibrary OnDocLoaded
 -----------------------------------------------------------------------------------------------
@@ -122,28 +123,10 @@ function VikingLibrary:OnDocLoaded()
 
     Event_FireGenericEvent("VikingLibrary:Loaded")
 
-    VikingSettings = Apollo.GetAddon("VikingSettings")
+    self.Settings = Apollo.GetAddon("VikingSettings")
 
-    self.tColors = VikingSettings.tColors
-    -- if the xmlDoc is no longer needed, you should set it to nil
-    -- self.xmlDoc = nil
-
-    -- Register handlers for events, slash commands and timer, etc.
-    -- e.g. Apollo.RegisterEventHandler("KeyDown", "OnKeyDown", self)
-
-    -- Do additional Addon initialization here
+    self.tColors = self.Settings.tColors
   end
-end
-
-function VikingLibrary.RegisterSettings(parent, sAddonName)
-  return VikingSettings.RegisterSettings(parent, sAddonName)
-end
-
-function VikingLibrary.GetDatabase(dbName)
-  VikingSettings = Apollo.GetAddon("VikingSettings")
-  local db = VikingSettings.db.char[dbName]
-  db.General = VikingSettings.db.char.General
-  return db
 end
 
 function VikingLibrary.Include(modules)
