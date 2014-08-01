@@ -67,6 +67,6 @@
     <AutoButton Name="SquareButton" Texture="VikingLibrary\assets\buttonShapes.tga" x0="0" x1="2" x2="2" x3="2" x4="11" x5="16" y0="0" y1="4" y2="4" y3="4" y4="9" y5="16" Stretchy="1" StateBits="15" Direction="Down"/>
     <AutoButton Name="SmallRoundButton" Texture="VikingLibrary\assets\buttonShapes.tga" x0="16" x1="24" x2="24" x3="24" x4="40" x5="48" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" Stretchy="1" StateBits="15" Direction="Down"/>
     <AutoButton Name="LargeRoundButton" Texture="VikingLibrary\assets\buttonShapes.tga" x0="48" x1="64" x2="64" x3="64" x4="80" x5="96" y0="0" y1="0" y2="0" y3="0" y4="0" y5="24" Stretchy="1" StateBits="15" Direction="Down"/>
-    <AutoButton Name="SettingsCheckBoxbtn" Texture="VikingLibrary\assets\CheckBoxBtn.png" x0="0" x1="22" x2="22" x3="22" x4="22" x5="22" y0="0" y1="18" y2="18" y3="18" y4="18" y5="18" StateBits="31" Direction="Down"/>
+    <AutoButton Name="CheckBoxbtn" Texture="VikingLibrary\assets\CheckBoxBtn.png" x0="0" x1="22" x2="22" x3="22" x4="22" x5="22" y0="0" y1="18" y2="18" y3="18" y4="18" y5="18" StateBits="31" Direction="Down"/>
 
 </Sprites>
