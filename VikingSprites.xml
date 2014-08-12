@@ -36,29 +36,27 @@
     <Sprite Name="LeaderIcon" Cycle="1">
         <Frame Texture="VikingLibrary\assets\leader.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="16" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
-    <Sprite Name="ClassMedic" Cycle="1">
-        <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="13" y0="0" y1="0" y2="0" y3="0" y4="0" y5="13" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    <Sprite Name="ClassMedic16" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="16" x1="16" x2="16" x3="16" x4="16" x5="32" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
-    <Sprite Name="ClassSpellslinger" Cycle="1">
-        <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="13" x1="13" x2="13" x3="13" x4="13" x5="26" y0="0" y1="0" y2="0" y3="0" y4="0" y5="13" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    <Sprite Name="ClassSpellslinger16" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="48" x1="48" x2="48" x3="48" x4="48" x5="64" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
-    <Sprite Name="ClassWarrior" Cycle="1">
-        <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="26" x1="26" x2="26" x3="26" x4="26" x5="39" y0="0" y1="0" y2="0" y3="0" y4="0" y5="13" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    <Sprite Name="ClassWarrior16" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="16" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
-    <Sprite Name="ClassStalker" Cycle="1">
-        <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="39" x1="39" x2="39" x3="39" x4="39" x5="52" y0="0" y1="0" y2="0" y3="0" y4="0" y5="13" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    <Sprite Name="ClassStalker16" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="32" x1="32" x2="32" x3="32" x4="32" x5="48" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
-    <Sprite Name="ClassEsper" Cycle="1">
-        <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="52" x1="52" x2="52" x3="52" x4="52" x5="65" y0="0" y1="0" y2="0" y3="0" y4="0" y5="13" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    <Sprite Name="ClassEsper16" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="64" x1="64" x2="64" x3="64" x4="64" x5="80" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
-    <Sprite Name="ClassEngineer" Cycle="1">
-        <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="13" y0="13" y1="13" y2="13" y3="13" y4="13" y5="26" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    <Sprite Name="ClassEngineer16" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="80" x1="80" x2="80" x3="80" x4="80" x5="96" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
-
     <Sprite Name="ArrowRight" Cycle="1">
         <Frame Texture="VikingLibrary\assets\arrowRight.tga" x0="0" x1="16" x2="16" x3="16" x4="16" x5="16" y0="0" y1="32" y2="32" y3="32" y4="32" y5="32" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
-
     <AutoButton Name="ArrowUp" Texture="VikingLibrary\assets\menuArrows.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="32" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" Stretchy="1" StateBits="23" Direction="Down"/>
     <AutoButton Name="ArrowDown" Texture="VikingLibrary\assets\menuArrows.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="32" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" Stretchy="1" StateBits="23" Direction="Down"/>
     <AutoButton Name="ChatButton" Texture="VikingLibrary\assets\icons.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="16" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" Stretchy="1" StateBits="23" Direction="Across"/>
@@ -68,5 +66,16 @@
     <AutoButton Name="SmallRoundButton" Texture="VikingLibrary\assets\buttonShapes.tga" x0="16" x1="24" x2="24" x3="24" x4="40" x5="48" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" Stretchy="1" StateBits="15" Direction="Down"/>
     <AutoButton Name="LargeRoundButton" Texture="VikingLibrary\assets\buttonShapes.tga" x0="48" x1="64" x2="64" x3="64" x4="80" x5="96" y0="0" y1="0" y2="0" y3="0" y4="0" y5="24" Stretchy="1" StateBits="15" Direction="Down"/>
     <AutoButton Name="CheckBoxbtn" Texture="VikingLibrary\assets\CheckBoxBtn.png" x0="0" x1="22" x2="22" x3="22" x4="22" x5="22" y0="0" y1="18" y2="18" y3="18" y4="18" y5="18" StateBits="31" Direction="Down"/>
-
+    <Sprite Name="PathSoldier16" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\path-icons.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="16" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="PathSettler16" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\path-icons.tga" x0="16" x1="16" x2="16" x3="16" x4="16" x5="32" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="PathExplorer16" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\path-icons.tga" x0="32" x1="32" x2="32" x3="32" x4="32" x5="48" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="PathScientist16" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\path-icons.tga" x0="48" x1="48" x2="48" x3="48" x4="48" x5="64" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
 </Sprites>
