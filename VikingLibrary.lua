@@ -11,7 +11,7 @@ require "GameLib"
 
 local VikingLibrary = {
   _VERSION = 'VikingLibrary.lua 0.0.1',
-  _URL     = '',
+  _URL     = 'https://github.com/vikinghug/VikingLibrary',
   _DESCRIPTION = '',
   _LICENSE = [[
     MIT LICENSE

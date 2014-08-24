@@ -18,6 +18,9 @@
     <Sprite Name="SprintBackground" Cycle="1">
         <Frame Texture="VikingLibrary\assets\sprintBackground.tga" x0="0" x1="4" x2="5" x3="5" x4="6" x5="12" y0="0" y1="0" y2="0" y3="0" y4="0" y5="8" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
+    <Sprite Name="ArrowRight" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\arrowRight.tga" x0="0" x1="16" x2="16" x3="16" x4="16" x5="16" y0="0" y1="32" y2="32" y3="32" y4="32" y5="32" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
     <Sprite Name="Chat" Cycle="1">
         <Frame Texture="VikingLibrary\assets\icons.tga" x0="16" x1="16" x2="16" x3="16" x4="16" x5="32" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" Stretchy="1" HotspotX="65" HotspotY="65" Duration="1.000" StartColor="ffffffff" EndColor="ffffffff"/>
     </Sprite>
@@ -36,29 +39,96 @@
     <Sprite Name="LeaderIcon" Cycle="1">
         <Frame Texture="VikingLibrary\assets\leader.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="16" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
-    <Sprite Name="ClassMedic" Cycle="1">
-        <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="13" y0="0" y1="0" y2="0" y3="0" y4="0" y5="13" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    <Sprite Name="Icon_Class_Warrior_12" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Classes_12.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="12" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" HotspotX="6" HotspotY="6" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
-    <Sprite Name="ClassSpellslinger" Cycle="1">
-        <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="13" x1="13" x2="13" x3="13" x4="13" x5="26" y0="0" y1="0" y2="0" y3="0" y4="0" y5="13" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    <Sprite Name="Icon_Class_Warrior_24" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Classes_24.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="24" y0="0" y1="0" y2="0" y3="0" y4="0" y5="24" HotspotX="12" HotspotY="12" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
-    <Sprite Name="ClassWarrior" Cycle="1">
-        <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="26" x1="26" x2="26" x3="26" x4="26" x5="39" y0="0" y1="0" y2="0" y3="0" y4="0" y5="13" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    <Sprite Name="Icon_Class_Warrior_36" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Classes_36.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="36" y0="0" y1="0" y2="0" y3="0" y4="0" y5="36" HotspotX="18" HotspotY="18" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
-    <Sprite Name="ClassStalker" Cycle="1">
-        <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="39" x1="39" x2="39" x3="39" x4="39" x5="52" y0="0" y1="0" y2="0" y3="0" y4="0" y5="13" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    <Sprite Name="Icon_Class_Medic_12" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Classes_12.tga" x0="12" x1="12" x2="12" x3="12" x4="12" x5="24" y0="1" y1="1" y2="1" y3="1" y4="1" y5="12" HotspotX="6" HotspotY="6" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
-    <Sprite Name="ClassEsper" Cycle="1">
-        <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="52" x1="52" x2="52" x3="52" x4="52" x5="65" y0="0" y1="0" y2="0" y3="0" y4="0" y5="13" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    <Sprite Name="Icon_Class_Medic_24" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Classes_24.tga" x0="24" x1="24" x2="24" x3="24" x4="24" x5="48" y0="0" y1="0" y2="0" y3="0" y4="0" y5="24" HotspotX="12" HotspotY="12" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
-    <Sprite Name="ClassEngineer" Cycle="1">
-        <Frame Texture="VikingLibrary\assets\class-icons.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="13" y0="13" y1="13" y2="13" y3="13" y4="13" y5="26" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    <Sprite Name="Icon_Class_Medic_36" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Classes_36.tga" x0="36" x1="36" x2="36" x3="36" x4="36" x5="72" y0="0" y1="0" y2="0" y3="0" y4="0" y5="36" HotspotX="18" HotspotY="18" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
-
-    <Sprite Name="ArrowRight" Cycle="1">
-        <Frame Texture="VikingLibrary\assets\arrowRight.tga" x0="0" x1="16" x2="16" x3="16" x4="16" x5="16" y0="0" y1="32" y2="32" y3="32" y4="32" y5="32" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+    <Sprite Name="Icon_Class_Stalker_12" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Classes_12.tga" x0="24" x1="24" x2="24" x3="24" x4="24" x5="36" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" HotspotX="6" HotspotY="6" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
-
+    <Sprite Name="Icon_Class_Stalker_24" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Classes_24.tga" x0="48" x1="48" x2="48" x3="48" x4="48" x5="72" y0="0" y1="0" y2="0" y3="0" y4="0" y5="24" HotspotX="12" HotspotY="12" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Class_Stalker_36" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Classes_36.tga" x0="73" x1="73" x2="73" x3="73" x4="73" x5="109" y0="0" y1="0" y2="0" y3="0" y4="0" y5="36" HotspotX="18" HotspotY="18" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Class_Spellslinger_12" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Classes_12.tga" x0="36" x1="36" x2="36" x3="36" x4="36" x5="48" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" HotspotX="6" HotspotY="6" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Class_Spellslinger_24" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Classes_24.tga" x0="72" x1="72" x2="72" x3="72" x4="72" x5="96" y0="0" y1="0" y2="0" y3="0" y4="0" y5="24" HotspotX="12" HotspotY="12" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Class_Spellslinger_36" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Classes_36.tga" x0="108" x1="108" x2="108" x3="108" x4="108" x5="144" y0="0" y1="0" y2="0" y3="0" y4="0" y5="36" HotspotX="18" HotspotY="18" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Class_Esper_12" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Classes_12.tga" x0="48" x1="48" x2="48" x3="48" x4="48" x5="60" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" HotspotX="6" HotspotY="6" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Class_Esper_24" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Classes_24.tga" x0="96" x1="96" x2="96" x3="96" x4="96" x5="120" y0="0" y1="0" y2="0" y3="0" y4="0" y5="24" HotspotX="12" HotspotY="12" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Class_Esper_36" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Classes_36.tga" x0="144" x1="144" x2="144" x3="144" x4="144" x5="180" y0="0" y1="0" y2="0" y3="0" y4="0" y5="36" HotspotX="18" HotspotY="18" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Class_Engineer_12" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Classes_12.tga" x0="60" x1="60" x2="60" x3="60" x4="60" x5="72" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" HotspotX="6" HotspotY="6" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Class_Engineer_24" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Classes_24.tga" x0="120" x1="120" x2="120" x3="120" x4="120" x5="144" y0="0" y1="0" y2="0" y3="0" y4="0" y5="24" HotspotX="12" HotspotY="12" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Class_Engineer_36" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Classes_36.tga" x0="180" x1="180" x2="180" x3="180" x4="180" x5="216" y0="0" y1="0" y2="0" y3="0" y4="0" y5="36" HotspotX="18" HotspotY="18" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Path_Scientist_12" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Paths_12.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="12" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" HotspotX="6" HotspotY="6" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Path_Scientist_24" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Paths_24.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="24" y0="0" y1="0" y2="0" y3="0" y4="0" y5="24" HotspotX="12" HotspotY="12" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Path_Scientist_36" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Paths_36.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="36" y0="0" y1="0" y2="0" y3="0" y4="0" y5="36" HotspotX="18" HotspotY="18" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Path_Explorer_12" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Paths_12.tga" x0="12" x1="12" x2="12" x3="12" x4="12" x5="24" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" HotspotX="6" HotspotY="6" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Path_Explorer_24" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Paths_24.tga" x0="24" x1="24" x2="24" x3="24" x4="24" x5="48" y0="0" y1="0" y2="0" y3="0" y4="0" y5="24" HotspotX="12" HotspotY="12" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Path_Explorer_36" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Paths_36.tga" x0="36" x1="36" x2="36" x3="36" x4="36" x5="72" y0="0" y1="0" y2="0" y3="0" y4="0" y5="36" HotspotX="18" HotspotY="18" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Path_Settler_12" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Paths_12.tga" x0="24" x1="24" x2="24" x3="24" x4="24" x5="36" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" HotspotX="6" HotspotY="6" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Path_Settler_24" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Paths_24.tga" x0="48" x1="48" x2="48" x3="48" x4="48" x5="72" y0="0" y1="0" y2="0" y3="0" y4="0" y5="24" HotspotX="12" HotspotY="12" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Path_Settler_36" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Paths_36.tga" x0="72" x1="72" x2="72" x3="72" x4="72" x5="108" y0="0" y1="0" y2="0" y3="0" y4="0" y5="36" HotspotX="18" HotspotY="18" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Path_Soldier_12" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Paths_12.tga" x0="36" x1="36" x2="36" x3="36" x4="36" x5="48" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" HotspotX="6" HotspotY="6" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Path_Soldier_24" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Paths_24.tga" x0="72" x1="72" x2="72" x3="72" x4="72" x5="96" y0="0" y1="0" y2="0" y3="0" y4="0" y5="24" HotspotX="12" HotspotY="12" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Path_Soldier_36" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Paths_36.tga" x0="108" x1="108" x2="108" x3="108" x4="108" x5="144" y0="0" y1="0" y2="0" y3="0" y4="0" y5="36" HotspotX="18" HotspotY="18" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
     <AutoButton Name="ArrowUp" Texture="VikingLibrary\assets\menuArrows.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="32" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" Stretchy="1" StateBits="23" Direction="Down"/>
     <AutoButton Name="ArrowDown" Texture="VikingLibrary\assets\menuArrows.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="32" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" Stretchy="1" StateBits="23" Direction="Down"/>
     <AutoButton Name="ChatButton" Texture="VikingLibrary\assets\icons.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="16" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" Stretchy="1" StateBits="23" Direction="Across"/>
@@ -68,5 +138,49 @@
     <AutoButton Name="SmallRoundButton" Texture="VikingLibrary\assets\buttonShapes.tga" x0="16" x1="24" x2="24" x3="24" x4="40" x5="48" y0="0" y1="0" y2="0" y3="0" y4="0" y5="16" Stretchy="1" StateBits="15" Direction="Down"/>
     <AutoButton Name="LargeRoundButton" Texture="VikingLibrary\assets\buttonShapes.tga" x0="48" x1="64" x2="64" x3="64" x4="80" x5="96" y0="0" y1="0" y2="0" y3="0" y4="0" y5="24" Stretchy="1" StateBits="15" Direction="Down"/>
     <AutoButton Name="CheckBoxbtn" Texture="VikingLibrary\assets\CheckBoxBtn.png" x0="0" x1="22" x2="22" x3="22" x4="22" x5="22" y0="0" y1="18" y2="18" y3="18" y4="18" y5="18" StateBits="31" Direction="Down"/>
-
+    <Sprite Name="Icon_Coin_Influence_12" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Coin_12.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="12" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" HotspotX="60" HotspotY="12" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Coin_Influence_24" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Coin_24.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="24" y0="0" y1="0" y2="0" y3="0" y4="0" y5="24" HotspotX="12" HotspotY="12" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Coin_Influence_36" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Coin_36.tga" x0="0" x1="0" x2="0" x3="0" x4="0" x5="36" y0="0" y1="0" y2="0" y3="0" y4="0" y5="36" HotspotX="18" HotspotY="18" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Coin_Renown_12" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Coin_12.tga" x0="12" x1="12" x2="12" x3="12" x4="12" x5="24" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" HotspotX="6" HotspotY="6" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Coin_Renown_24" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Coin_24.tga" x0="24" x1="24" x2="24" x3="24" x4="24" x5="48" y0="0" y1="0" y2="0" y3="0" y4="0" y5="24" HotspotX="12" HotspotY="12" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Coin_Renown_36" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Coin_36.tga" x0="36" x1="36" x2="36" x3="36" x4="36" x5="72" y0="0" y1="0" y2="0" y3="0" y4="0" y5="36" HotspotX="18" HotspotY="18" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Coin_Prestige_12" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Coin_12.tga" x0="24" x1="24" x2="24" x3="24" x4="24" x5="36" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" HotspotX="6" HotspotY="6" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Coin_Prestige_24" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Coin_24.tga" x0="48" x1="48" x2="48" x3="48" x4="48" x5="72" y0="0" y1="0" y2="0" y3="0" y4="0" y5="24" HotspotX="12" HotspotY="12" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Coin_Prestige_36" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Coin_36.tga" x0="72" x1="72" x2="72" x3="72" x4="72" x5="108" y0="0" y1="0" y2="0" y3="0" y4="0" y5="36" HotspotX="18" HotspotY="18" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Coin_ElderGems_12" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Coin_12.tga" x0="36" x1="36" x2="36" x3="36" x4="36" x5="48" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" HotspotX="6" HotspotY="6" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Coin_ElderGems_24" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Coin_24.tga" x0="72" x1="72" x2="72" x3="72" x4="72" x5="96" y0="0" y1="0" y2="0" y3="0" y4="0" y5="24" HotspotX="12" HotspotY="12" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Coin_ElderGems_36" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Coin_36.tga" x0="108" x1="108" x2="108" x3="108" x4="108" x5="144" y0="0" y1="0" y2="0" y3="0" y4="0" y5="36" HotspotX="18" HotspotY="18" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Coin_CraftingVouchers_12" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Coin_12.tga" x0="48" x1="48" x2="48" x3="48" x4="48" x5="60" y0="0" y1="0" y2="0" y3="0" y4="0" y5="12" HotspotX="6" HotspotY="6" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Coin_CraftingVouchers_24" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Coin_24.tga" x0="96" x1="96" x2="96" x3="96" x4="96" x5="120" y0="0" y1="0" y2="0" y3="0" y4="0" y5="24" HotspotX="12" HotspotY="12" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
+    <Sprite Name="Icon_Coin_CraftingVouchers_36" Cycle="1">
+        <Frame Texture="VikingLibrary\assets\Icon_Coin_36.tga" x0="144" x1="144" x2="144" x3="144" x4="144" x5="180" y0="0" y1="0" y2="0" y3="0" y4="0" y5="36" HotspotX="18" HotspotY="18" Duration="1.000" StartColor="white" EndColor="white"/>
+    </Sprite>
 </Sprites>
