@@ -1,0 +1,9 @@
+<Fonts>
+    <Font Name="Consolas_12" Face="Consolas" Size="12" GfxFont_3D="0" GfxFont_Bold="0" GfxFont_Italic="0" GfxFont_Shadow="0" GfxFont_Outline="0"/>
+    <Font Name="Consolas_12_B" Face="Consolas" Size="12" GfxFont_3D="0" GfxFont_Bold="1" GfxFont_Italic="0" GfxFont_Shadow="0" GfxFont_Outline="0"/>
+    <Font Name="Consolas_12_BO" Face="Consolas" Size="12" GfxFont_3D="0" GfxFont_Bold="1" GfxFont_Italic="0" GfxFont_Shadow="0" GfxFont_Outline="1"/>
+    <Font Name="Consolas_12_O" Face="Consolas" Size="12" GfxFont_3D="0" GfxFont_Bold="0" GfxFont_Italic="0" GfxFont_Shadow="0" GfxFont_Outline="1"/>
+    <Font Name="Consolas_12_I" Face="Consolas" Size="12" GfxFont_3D="0" GfxFont_Bold="0" GfxFont_Italic="1" GfxFont_Shadow="0" GfxFont_Outline="0"/>
+    <Font Name="HappyFox_32_O" Face="Happy Fox Condensed" Size="32" GfxFont_3D="0" GfxFont_Bold="0" GfxFont_Italic="0" GfxFont_Shadow="0" GfxFont_Outline="1"/>
+    <Font Name="HappyFox_32" Face="Happy Fox Condensed" Size="32" GfxFont_3D="0" GfxFont_Bold="0" GfxFont_Italic="0" GfxFont_Shadow="0" GfxFont_Outline="0"/>
+</Fonts>
